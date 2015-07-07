@@ -4,5 +4,4 @@ This repo contains the Javascript used in [WasThatAnEarthquake][WasThatAnEarthqu
 
 radius = 2^(magnitude-1)
 
-An estimate of the magnitude at the users location for all earthquakes in the last 15 minutes is calculated using...
-
+An estimate of the magnitude at the users location for all earthquakes in the last 15 minutes is calculated using USGS's PDA
