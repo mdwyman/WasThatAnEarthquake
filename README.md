@@ -4,12 +4,18 @@ This repo contains the Javascript used in [WasThatAnEarthquake](https://wasthata
 
 $$radius = 2^{magnitude-1}$$
 
+## Magnitudes
+
 An estimate of the magnitude at the users location for all earthquakes in the last 15 minutes is calculated using USGS's predicted distance attenuation (PDA) function.  The USGS provides PDA’s for the eastern and western U.S. both are calculated and used as upper and lower bounds, respectively.  
 
 $$M_{eastern}\ =\ 1.60\ +1.29*M\ -\ 0.00051*L - 2.16*log_{10}L$$
 
 $$M_{western}\ =\ 1.15\ +1.01*M\ -\ 0.00054*L - 1.72*log_{10}L$$
 
-Where M is the measured magnitude of the earthquake and L the chordal distance between the user and the earthquake epicenter.  The chordal distance is calculated:
+Where M is the measured magnitude of the earthquake and L the chordal distance between the user and the earthquake epicenter.  
+
+## Chordal distances
+
+The chordal distance is calculated:
 
 $$L\ = \frac{R_earth}{1000.0}$$
